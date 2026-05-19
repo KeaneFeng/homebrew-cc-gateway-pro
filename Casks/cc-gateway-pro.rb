@@ -9,11 +9,11 @@ cask "cc-gateway-pro" do
 
   depends_on macos: :monterey
 
-  app "CC-Gateway-Pro.app"
+  app "CC Gateway Pro.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "/Applications/CC-Gateway-Pro.app"]
+                   args: ["-dr", "com.apple.quarantine", "/Applications/CC Gateway Pro.app"]
   end
 
   zap trash: [
