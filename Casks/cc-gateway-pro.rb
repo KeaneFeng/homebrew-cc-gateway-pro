@@ -12,8 +12,8 @@ cask "cc-gateway-pro" do
   app "CC-Gateway-Pro.app"
 
   postflight do
-    # Remove quarantine flag for ad-hoc signed builds
-    system "xattr", "-cr", staged_path.join("CC-Gateway-Pro.app")
+    # Remove quarantine attribute for ad-hoc signed builds to bypass Gatekeeper
+    system_command "xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/CC-Gateway-Pro.app"]
   end
 
   zap trash: [
