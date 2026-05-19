@@ -12,7 +12,10 @@ cask "cc-gateway-pro" do
   app "CC-Gateway-Pro.app"
 
   postflight do
-    system "/usr/bin/xattr", "-dr", "com.apple.quarantine", "/Applications/CC-Gateway-Pro.app"
+    # Remove quarantine attribute for ad-hoc signed builds
+    # Gatekeeper shows "app is damaged" for quarantined unsigned apps
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "/Applications/CC-Gateway-Pro.app"]
   end
 
   zap trash: [
