@@ -1,6 +1,6 @@
 cask "cc-gateway-pro" do
-  version "3.15.2"
-  sha256 "f4c08532486d32b1e008ba366d9aca907177f848f3d15456d27dba8839773f01"
+  version "3.20.1"
+  sha256 "5191f54de91646f5c4261f8e472c318fd048fffdf79cb60dfe3bf5bd41b6d8ad"
 
   url "https://github.com/KeaneFeng/cc-gateway-pro/releases/download/v#{version}/CC Gateway Pro_3.15.2_aarch64.dmg"
   name "CC-Gateway-Pro"
