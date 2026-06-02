@@ -1,8 +1,8 @@
 cask "cc-gateway-pro" do
-  version "3.6.0"
-  sha256 "e36a789fc0f8a3818aec26070b7add8923b97f5e62f4ce89e4970a78fe6293d9"
+  version "3.16.0"
+  sha256 "22a4ebab7a0a8439cf68a1ee9bba87f60ef32e1296eb433af066dcf6e7f0e291"
 
-  url "https://github.com/KeaneFeng/cc-gateway-pro/releases/download/v#{version}/CC.Gateway.Pro_3.6.0_aarch64.dmg"
+  url "https://github.com/KeaneFeng/cc-gateway-pro/releases/download/v#{version}/CC.Gateway.Pro_3.16.0_aarch64.dmg"
   name "CC Gateway Pro"
   desc "Multi-provider aggregation gateway for Claude Code"
   homepage "https://github.com/KeaneFeng/cc-gateway-pro"
